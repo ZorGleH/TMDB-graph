@@ -1,4 +1,4 @@
-TMDB graph
+TMDB graph ![themoviedb.org](http://www.themoviedb.org/images/logos/tmdb-logo-1.png)
 ==========
 
 This is a mashup of [domino.js](http://dominojs.org/) and [sigma.js](http://sigmajs.org/) using the [themoviedb.org](http://www.themoviedb.org/) [API](http://docs.themoviedb.apiary.io/).
