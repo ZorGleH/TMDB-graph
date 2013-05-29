@@ -10,18 +10,32 @@ var tmdb = new domino({
       dispatch: 'queryUpdated'
     }, {
       id: 'personChoices',
-      description: 'Persons found from TMDB API',
+      description: 'Current choices of persons',
       type: 'array',
       value: [],
       triggers: 'updatePersonChoices',
       dispatch: 'personChoicesUpdated'
     }, {
       id: 'movieChoices',
-      description: 'Movies found from TMDB API',
+      description: 'Current choices of movies',
       type: 'array',
       value: [],
       triggers: 'updateMovieChoices',
       dispatch: 'movieChoicesUpdated'
+    }, {
+      id: 'choices',
+      description: 'Current choices of persons + movies',
+      type: 'array',
+      value: [],
+      triggers: 'updateChoices',
+      dispatch: 'choicesUpdated'
+    }, {
+      id: 'choice',
+      description: 'Currently selected person or movie',
+      type: '?object',
+      value: null,
+      triggers: 'updateChoice',
+      dispatch: 'choiceUpdated'
     },
     // API
     {
